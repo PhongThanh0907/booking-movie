@@ -47,7 +47,7 @@ export default function Header() {
       className={`${
         scrolled
           ? "fixed top-0 w-full z-20 py-4 lg:py-1 duration-300 bg-black/50 h-16 lg:h-20"
-          : "py-4 lg:py-2 fixed top-0 left-0 right-0 duration-300 h-24 lg:h-32"
+          : "py-4 lg:py-3 z-20 fixed top-0 left-0 right-0 duration-300 h-24 lg:h-32"
       }`}
     >
       <div className="flex px-2 lg:px-0 items-center justify-between lg:w-[93%] lg:mx-auto">
