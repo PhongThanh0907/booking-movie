@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useCallback, useEffect, useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import React, { useCallback, useState } from "react";
 import SelectComponent from "@/components/ui/SelectComponent";
 
 const OPTION_BUTTON = [
@@ -105,13 +104,6 @@ const CartContent = () => {
         <div className="flex-1 flex items-center">
           <div className="grid grid-cols-2 w-[80%] mx-auto gap-4">
             {OPTION_BUTTON.map((item, index) => (
-              //   <button
-              //     className={` hover:bg-main duration-200 text-white flex items-center justify-between px-4 py-3 `}
-              //     key={item.label}
-              //   >
-              //     <span className="uppercase pl-2">{item.label}</span>
-              //     <ChevronDownIcon className="h-4 w-4" />
-              //   </button>
               <SelectComponent
                 className={`${
                   index === 1 || index === 3 ? "rounded-l-3xl" : "rounded-r-3xl"
